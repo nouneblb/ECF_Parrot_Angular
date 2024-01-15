@@ -1,0 +1,31 @@
+/*font for text*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lato:wght@100&display=swap');
+/*font for tittle*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    background-color: #262526;
+}
+
+/*background barre de navigation */
+.navbar {
+    background-color: #D92332;
+}
+
+/*custom navlink */
+.navbar-nav .nav-link {
+    background: #D92332;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    margin: 0 40px;
+}
+
+/*décalage auto onglets de navigation*/
+.navbar-nav {
+    margin-left: auto !important;
+}
