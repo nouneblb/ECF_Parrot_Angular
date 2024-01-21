@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<!-- Titre avant cards service -->
+<div class="row">
+    <div class="col-12">
+        <h1 class="title-service">Ce qu'on vous offre</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4" *ngFor="let service of services">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">{{ getTitle(service) }}</h5>
+                <p class="card-desc">Le service de mécanique dédié de Parrot Automobile offre une expertise exceptionnelle dans l'entretien et la réparation automobile. Notre équipe qualifiée de mécaniciens chevronnés met tout en œuvre pour assurer la performance optimale de votre véhicule. Avec un engagement envers la qualité et l'efficacité, 
+                    nous offrons des services de mécanique fiables, allant de la maintenance préventive aux réparations complexes. 
+                    Confiez-nous votre véhicule, et bénéficiez d'un service professionnel qui garantit votre sécurité et la longévité de votre voiture.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
