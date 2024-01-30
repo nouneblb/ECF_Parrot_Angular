@@ -15,6 +15,9 @@ import { HomeComponent } from './pages/general/home/home.component';
 import { NotFoundComponent } from './pages/general/not-found/not-found.component';
 import { CarsComponent } from './pages/general/application/cars/cars.component';
 import { OccasionsComponent } from './pages/general/occasions/occasions.component';
+import { FormsModule } from '@angular/forms';
+import { CarsContentComponent } from './pages/general/application/cars-content/cars-content.component';
+
 
 
 @NgModule({
@@ -30,11 +33,13 @@ import { OccasionsComponent } from './pages/general/occasions/occasions.componen
     NotFoundComponent,
     CarsComponent,
     OccasionsComponent,
+    CarsContentComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

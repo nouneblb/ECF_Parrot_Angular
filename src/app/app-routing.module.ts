@@ -12,6 +12,7 @@ import { OccasionsComponent } from './pages/general/occasions/occasions.componen
 
 import { ServicesPageComponent } from './pages/general/application/services-page/services-page.component';
 import { CarsComponent } from './pages/general/application/cars/cars.component';
+import { CarsContentComponent } from './pages/general/application/cars-content/cars-content.component';
 
 import { AppComponent } from './app.component';
 
@@ -20,7 +21,8 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
 
   { path: 'login', component: LoginComponent },
-  { path: '', redirectTo:'login', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent},
+  { path: '', redirectTo:'home', pathMatch: 'full' }, /* path vide ou ** = lien vide redirigé vers la page que je souhaite */
   { path: 'signup', component: SignupComponent },
 
   { path: 'contact', component: ContactComponent },
@@ -28,6 +30,7 @@ const routes: Routes = [
   
   { path: 'services', component: ServicesPageComponent },
   { path: 'cars', component: CarsComponent },
+  { path: 'cars-content', component: CarsContentComponent }
 ];
 
 @NgModule({
