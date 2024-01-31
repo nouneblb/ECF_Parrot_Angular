@@ -54,6 +54,36 @@
     font-weight: 300;
 }
 
+/* custom form styles */
+.form-title {
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: 17px;
+    margin-top: 40px;
+}
+
+.message {
+    color: grey;
+}
+
+.custom-button {
+    background-color: #D92533;
+    color: whitesmoke;
+}
+
+.custom-button:hover {
+    color: whitesmoke;
+    background-color: grey;
+}
+
+.reponse-msg {
+    color: whitesmoke;
+    border: 1px solid white;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
 
 
 
