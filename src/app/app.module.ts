@@ -16,6 +16,7 @@ import { NotFoundComponent } from './pages/general/not-found/not-found.component
 import { CarsComponent } from './pages/general/application/cars/cars.component';
 import { OccasionsComponent } from './pages/general/occasions/occasions.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CarsContentComponent } from './pages/general/application/cars-content/cars-content.component';
 
 
@@ -39,7 +40,8 @@ import { CarsContentComponent } from './pages/general/application/cars-content/c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
