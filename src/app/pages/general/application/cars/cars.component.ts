@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
+
 
 interface Cars {
   title: string,
@@ -19,15 +21,15 @@ interface Cars {
 export class CarsComponent {
   //tableau de données représentant les véhicules d'occasions
   occasionCars = [
-    { title: 'Ford Ranger Raptor', price: 55400, year: 2023, mileage: 20000, fuel: 'Diesel', image: 'assets/ford.jpg'},
-    { title: 'Audi Sportback 45', price: 44500, year: 2021, mileage: 23000, fuel: 'Hybride', image: 'assets/audisportback.jpg'},
-    { title: 'Golf 5 Volkswagen', price: 26460, year: 2021, mileage: 98000, fuel: 'Diesel', image: 'assets/volkswagen.jpg'},
-    { title: 'Opel Corsa ', price: 22340, year: 2020, mileage: 133000, fuel: 'Diesel', image: 'assets/opelcorsa.jpg'},
-    { title: 'Ford Fiesta', price: 21750, year: 2011, mileage: 98000, fuel: 'Essence', image: 'assets/fordfiesta.jpg'},
-    { title: 'Fiat 500', price: 19320, year: 2019, mileage: 55200, fuel: 'Diesel', image: 'assets/fiat 500.jpg'},
-    { title: 'Renault Clio IV', price: 16440, year: 2019, mileage: 70000, fuel: 'Essence', image: 'assets/clio.jpg'},
-    { title: 'Renault Clio II', price: 15600, year: 2017, mileage: 90000, fuel: 'Essence', image: 'assets/renaultclio.jpg'},
-    { title: 'Peugeot 208', price: 12980, year: 2011, mileage: 100000, fuel: 'Diesel', image: 'assets/peugeot208.jpg'},
+    { id: 1, title: 'Ford Ranger Raptor', price: 55400, year: 2023, mileage: 20000, fuel: 'Diesel', image: 'assets/ford.jpg'},
+    { id: 2, title: 'Audi Sportback 45', price: 44500, year: 2021, mileage: 23000, fuel: 'Hybride', image: 'assets/audisportback.jpg'},
+    { id: 3, title: 'Golf 5 Volkswagen', price: 26460, year: 2021, mileage: 98000, fuel: 'Diesel', image: 'assets/volkswagen.jpg'},
+    { id: 4, title: 'Opel Corsa ', price: 22340, year: 2020, mileage: 133000, fuel: 'Diesel', image: 'assets/opelcorsa.jpg'},
+    { id: 5, title: 'Ford Fiesta', price: 21750, year: 2011, mileage: 98000, fuel: 'Essence', image: 'assets/fordfiesta.jpg'},
+    { id: 6, title: 'Fiat 500', price: 19320, year: 2019, mileage: 55200, fuel: 'Diesel', image: 'assets/fiat 500.jpg'},
+    { id: 7, title: 'Renault Clio IV', price: 16440, year: 2019, mileage: 70000, fuel: 'Essence', image: 'assets/clio.jpg'},
+    { id: 8, title: 'Renault Clio II', price: 15600, year: 2017, mileage: 90000, fuel: 'Essence', image: 'assets/renaultclio.jpg'},
+    { id: 9, title: 'Peugeot 208', price: 12980, year: 2011, mileage: 100000, fuel: 'Diesel', image: 'assets/peugeot208.jpg'},
   ];
 
   //form pour filter values
@@ -80,8 +82,16 @@ export class CarsComponent {
     // Afficher les résultats filtrés 
     this.showFilteredResults = true; 
   }
+
+  
+  constructor(private router: Router ) {}
+
+  // lors du click sur un lien véhicule (navigue vers l'url de l'id) => affiche le detail du véhicule 
+  navigateToContent(carId: number) {
+    this.router.navigate(['/cars', carId]);
+  }
 }
 
-  // raffraichir la liste deja affiché pour la liste filtré
+
 
   
