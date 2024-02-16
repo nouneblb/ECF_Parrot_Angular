@@ -19,6 +19,7 @@ import { OccasionsComponent } from './pages/general/occasions/occasions.componen
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CarsContentComponent } from './pages/general/application/cars-content/cars-content.component';
+import { EditScheduleComponent } from './pages/general/application/edit-schedule/edit-schedule.component';
 
 
 
@@ -36,6 +37,7 @@ import { CarsContentComponent } from './pages/general/application/cars-content/c
     CarsComponent,
     OccasionsComponent,
     CarsContentComponent,
+    EditScheduleComponent,
   ],
 
   imports: [
