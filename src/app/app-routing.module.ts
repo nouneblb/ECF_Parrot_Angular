@@ -30,7 +30,7 @@ const routes: Routes = [
   
   { path: 'services', component: ServicesPageComponent },
   { path: 'cars', component: CarsComponent },
-  { path: 'cars-content', component: CarsContentComponent }
+  { path: 'cars/:id', component: CarsContentComponent },
 ];
 
 @NgModule({
